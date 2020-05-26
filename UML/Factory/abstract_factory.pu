@@ -1,0 +1,21 @@
+@startuml
+
+ConcreteFactory1 .up.|> IFactory
+ConcreteFactory2 .up.|> IFactory
+
+interface IFactory {
+    + ProductA CreateProductA()
+    + ProductB CreateProductB()
+}
+
+class ConcreteFactory1 {
+}
+
+class ConcreteFactory2 {
+}
+
+note right of IFactory 
+    具象クラスを指定せず、インタフェースのみを提供する
+    インタフェースを実装したクラスを利用することでファクトリ機能を実現している
+end note
+@enduml

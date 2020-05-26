@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="201px" preserveAspectRatio="none" style="width:790px;height:201px;" version="1.1" viewBox="0 0 790 201" width="790px" zoomAndPan="magnify"><defs><filter height="300%" id="f175jeqe666w14" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[40032afdf3b7ba11206d848f1b965299]
+class ConcreteFactory1--><rect fill="#FEFECE" filter="url(#f175jeqe666w14)" height="48" id="ConcreteFactory1" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="6" y="142"/><ellipse cx="21" cy="158" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M23.4731,164.1431 Q22.8921,164.4419 22.2529,164.5913 Q21.6138,164.7407 20.9082,164.7407 Q18.4014,164.7407 17.0815,163.0889 Q15.7617,161.437 15.7617,158.3159 Q15.7617,155.1865 17.0815,153.5347 Q18.4014,151.8828 20.9082,151.8828 Q21.6138,151.8828 22.2612,152.0322 Q22.9087,152.1816 23.4731,152.4805 L23.4731,155.2031 Q22.8423,154.6221 22.2488,154.3523 Q21.6553,154.0825 21.0244,154.0825 Q19.6797,154.0825 18.9949,155.1492 Q18.3101,156.2158 18.3101,158.3159 Q18.3101,160.4077 18.9949,161.4744 Q19.6797,162.541 21.0244,162.541 Q21.6553,162.541 22.2488,162.2712 Q22.8423,162.0015 23.4731,161.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="100" x="35" y="162.5352">ConcreteFactory1</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="137" y1="174" y2="174"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="137" y1="182" y2="182"/><!--MD5=[c40cfbd4a5f1280558501a3e63cf3990]
+class IFactory--><rect fill="#FEFECE" filter="url(#f175jeqe666w14)" height="73.9102" id="IFactory" style="stroke: #A80036; stroke-width: 1.5;" width="172" x="69" y="8"/><ellipse cx="128.75" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M125.1777,20.2651 L125.1777,18.1069 L132.5571,18.1069 L132.5571,20.2651 L130.0918,20.2651 L130.0918,28.3418 L132.5571,28.3418 L132.5571,30.5 L125.1777,30.5 L125.1777,28.3418 L127.6431,28.3418 L127.6431,20.2651 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="44" x="149.25" y="28.5352">IFactory</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="70" x2="240" y1="40" y2="40"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="70" x2="240" y1="48" y2="48"/><ellipse cx="80" cy="59" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="89" y="62.6348">ProductA CreateProductA()</text><ellipse cx="80" cy="71.9551" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="89" y="75.5898">ProductB CreateProductB()</text><!--MD5=[e7b84ce2505fe77d924ba186871d0b8b]
+class ConcreteFactory2--><rect fill="#FEFECE" filter="url(#f175jeqe666w14)" height="48" id="ConcreteFactory2" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="173" y="142"/><ellipse cx="188" cy="158" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M190.4731,164.1431 Q189.8921,164.4419 189.2529,164.5913 Q188.6138,164.7407 187.9082,164.7407 Q185.4014,164.7407 184.0815,163.0889 Q182.7617,161.437 182.7617,158.3159 Q182.7617,155.1865 184.0815,153.5347 Q185.4014,151.8828 187.9082,151.8828 Q188.6138,151.8828 189.2612,152.0322 Q189.9087,152.1816 190.4731,152.4805 L190.4731,155.2031 Q189.8423,154.6221 189.2488,154.3523 Q188.6553,154.0825 188.0244,154.0825 Q186.6797,154.0825 185.9949,155.1492 Q185.3101,156.2158 185.3101,158.3159 Q185.3101,160.4077 185.9949,161.4744 Q186.6797,162.541 188.0244,162.541 Q188.6553,162.541 189.2488,162.2712 Q189.8423,162.0015 190.4731,161.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="100" x="202" y="162.5352">ConcreteFactory2</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="174" x2="304" y1="174" y2="174"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="174" x2="304" y1="182" y2="182"/><path d="M276,24.5 L276,41 L241.1,45 L276,49 L276,65.1211 A0,0 0 0 0 276,65.1211 L778,65.1211 A0,0 0 0 0 778,65.1211 L778,34.5 L768,24.5 L276,24.5 A0,0 0 0 0 276,24.5 " fill="#FBFB77" filter="url(#f175jeqe666w14)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M768,24.5 L768,34.5 L778,34.5 L768,24.5 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="325" x="282" y="42.0684">具象クラスを指定せず、インタフェースのみを提供する</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="481" x="282" y="57.3789">インタフェースを実装したクラスを利用することでファクトリ機能を実現している</text><!--MD5=[71f93b9753411710af0f00d51228e4b3]
+reverse link IFactory to ConcreteFactory1--><path d="M118.28,98.64 C107.73,113.77 96.76,129.5 88.15,141.85 " fill="none" id="IFactory&lt;-ConcreteFactory1" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="112.69,94.43,129.87,82.03,124.17,102.44,112.69,94.43" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[457bab5035ba31ff8fe360548575d6e7]
+reverse link IFactory to ConcreteFactory2--><path d="M192.16,98.64 C202.84,113.77 213.94,129.5 222.66,141.85 " fill="none" id="IFactory&lt;-ConcreteFactory2" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="186.25,102.4,180.43,82.03,197.68,94.33,186.25,102.4" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b85d13fad3119849372794854f657c8c]
+@startuml
+
+ConcreteFactory1 .up.|> IFactory
+ConcreteFactory2 .up.|> IFactory
+
+interface IFactory {
+    + ProductA CreateProductA()
+    + ProductB CreateProductB()
+}
+
+class ConcreteFactory1 {
+}
+
+class ConcreteFactory2 {
+}
+
+note right of IFactory 
+    具象クラスを指定せず、インタフェースのみを提供する
+    インタフェースを実装したクラスを利用することでファクトリ機能を実現している
+end note
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 18:35:57 JST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 11.0.1+13-LTS
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: ja
+Country: JP
+--></g></svg>

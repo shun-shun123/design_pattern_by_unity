@@ -1,0 +1,52 @@
+@startuml
+
+NYPizzaStore -up-|> PizzaStore
+ChicagoPizzaStore -up-|> PizzaStore
+
+NYStyleCheesePizza -up-|> Pizza
+NYStyleSimplePizza -up-|> Pizza
+ChicagoStyleCheesePizza -up-|> Pizza
+ChicagoStyleSimplePizza -up-|> Pizza
+
+abstract class PizzaStore {
+    + void OrderPizza()
+    # {abstract} Pizza CreatePizza(string type)
+}
+
+class NYPizzaStore {
+    # Pizza CreatePizza(string type)
+}
+
+class ChicagoPizzaStore {
+    # Pizza CreatePizza(string type)
+}
+
+abstract class Pizza {
+    + string Name
+    + string Dough
+    + string Sauce
+    + List<string> Toppings
+    + void Prepare()
+    + void Bake()
+    + void Cut()
+    + void Box()
+}
+
+class NYStyleCheesePizza {
+}
+
+class NYStyleSimplePizza {
+}
+
+class ChicagoStyleCheesePizza {
+}
+
+class ChicagoStyleSimplePizza{
+}
+
+note right of PizzaStore
+    ピザを生成するFactory Method「CreatePizza」を定義している
+    実装はサブクラス側で定義されており、利用するアルゴリズムは
+    スーパークラスのorderPizza内で呼び出される
+end note
+@enduml

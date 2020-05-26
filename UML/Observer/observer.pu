@@ -1,0 +1,44 @@
+@startuml
+
+WeatherData .up.|> ISubject
+
+CurrentConditionsDisplay .up.|> IObserver
+StatisticsDisplay .up.|> IObserver
+ThirdPartyDisplay .up.|> IObserver
+
+IObserver "many" -up-o "1" ISubject
+
+interface ISubject {
+    + void RegisterObserver()
+    + void RemoveObserver()
+    + void NotifyObservers()
+}
+
+class WeatherData {
+    - List<IObserver> observers
+    - float temperature
+    - float humidity
+    - float pressure
+    + void RegisterObserver()
+    + void RemoveObserver()
+    + void NotifyObservers()
+    - float _GetTemperature()
+    - float _GetHumidity()
+    - float _GetPressure()
+    + void MeasurementsChanged()
+}
+
+interface IObserver {
+    + void Update(Object obj)
+}
+
+class CurrentConditionsDisplay {
+    + void Update(Object obj)
+    + void Display()
+}
+
+class StatisticsDisplay {
+    + void Update(Object obj)
+    + void Display()
+}
+@enduml

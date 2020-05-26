@@ -1,0 +1,70 @@
+@startuml
+
+package "Encapsulated behaviour" {
+    FlyWithWings .up.|> IFlyBehaviour
+    FlyNoWay .up.|> IFlyBehaviour
+
+    Squack .up.|> IQuackBehaviour
+    MuteQuack .up.|> IQuackBehaviour
+}
+
+package "Client" {
+    Duck -- IFlyBehaviour
+    Duck -- IQuackBehaviour
+    MallarDuck --|> Duck
+}
+
+interface IQuackBehaviour {
+    + void Quack()
+}
+
+interface IFlyBehaviour {
+    + void Fly()
+}
+
+class FlyWithWings {
+    + void Fly()
+}
+
+class FlyNoWay {
+    + void Fly()
+}
+
+class Squack {
+    + void Quack()
+}
+
+class MuteQuack {
+    + void Quack()
+}
+
+note right of IFlyBehaviour
+    インタフェースで振る舞いを定義し
+    それを実装した具象クラスを作成することで
+    動作を<b>委譲</b>することができる
+end note
+
+abstract class Duck {
+    # IFlyBehaviour flyBehaviour
+    # IQuackBehaviour quackBehaviour
+    + void PerformFly()
+    + void PerformQuack()
+    + void Swim()
+    + {abstract} void Display()
+}
+
+note right of Duck 
+    抽象クラスのDuckはFly/Quackを機能としては備えている。
+    実装自体は別のクラスに委譲する。
+    これにより、機能の差し替え、変更が容易になった。
+end note
+
+class MallarDuck {
+    + void Display()
+}
+
+note right of MallarDuck
+    インタフェースを実装したクラスに処理を委譲することで
+    サブクラスではFly/Quackの処理を簡単に修正できる。
+end note
+@enduml
