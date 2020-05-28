@@ -1,0 +1,29 @@
+@startuml
+
+Coffee -up-|> CoffeineBeverage
+Tea -up-|> CoffeineBeverage
+
+abstract class CoffeineBeverage {
+    + void PrepareRecipe()
+    # {abstract} void Brew()
+    # {abstract} void AddCondiments()
+    # virtual bool CustomerWantsCondiments()
+    - void _BoilWater()
+    - void _PourInCup()
+}
+
+class Coffee {
+}
+
+class Tea {
+    # bool CustomerWantsCondiments()
+}
+
+note right of CoffeineBeverage
+    アルゴリズム自体はPrepareRecipeに内包されている
+    Brew/AddCondimentsの抽象メソッドをサブクラスで実装することで、
+    カプセル化したアルゴリズムを正しく振舞うようになっている
+    また、仮想メソッドをオーバーライドすることでアルゴリズムを
+    サブクラス側から変更できるようにフックされている
+end note
+@enduml

@@ -1,0 +1,37 @@
+@startuml
+
+MenuItem -up-|> MenuComponent
+Menu -up-|> MenuComponent
+
+abstract class MenuComponent {
+    + void Add(MenuComponent component)
+    + void Remove(MenuComponent component)
+    + MenuComponent GetChild(int i)
+    + string GetName()
+    + string GetDescription()
+    + double GetPrice()
+    + bool IsVegetarian()
+    + void Print()
+}
+
+class MenuItem {
+    - string _name
+    - string _description
+    - bool _isVegetarian
+    - double _price
+    + MenuItem(string name, string description, bool isVegetarian, double price)
+}
+
+class Menu {
+    - List<MenuComponent> _menuComponents
+    - string _name
+    - string _description
+    + Menu(string name, string description)
+}
+
+note right of MenuComponent
+    Menu/MenuItemが共通の抽象クラスを継承することで、
+    オーバーライドしないメソッドも出てくるが
+    Menu/MenuItemどちらであるかを意識せずツリー構造を処理できる
+end note
+@enduml

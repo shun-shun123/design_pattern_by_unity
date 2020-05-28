@@ -1,0 +1,38 @@
+@startuml
+
+MallarDuck .up.|> IDuck
+WildTurkey .up.|> ITurkey
+
+TurkeyAdapter .up.|> IDuck
+DuckAdapter .up.|> ITurkey
+
+TurkeyAdapter ..> ITurkey
+DuckAdapter ..> IDuck
+
+interface IDuck {
+    + void Quack()
+    + void Fly()
+}
+
+interface ITurkey {
+    + void Gobble()
+    + void Fly()
+}
+
+class MallarDuck {
+}
+
+class WildTurkey {
+}
+
+class TurkeyAdapter {
+    - ITurkey turkey
+    + TurkeyAdapter(ITurkey turkey)
+}
+
+class DuckAdapter {
+    - IDuck duck
+    + DuckAdapter(IDuck duck)
+}
+
+@enduml

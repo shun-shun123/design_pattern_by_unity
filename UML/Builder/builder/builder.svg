@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="226px" preserveAspectRatio="none" style="width:239px;height:226px;" version="1.1" viewBox="0 0 239 226" width="239px" zoomAndPan="magnify"><defs><filter height="300%" id="fkgn5ybk8503h" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ed6624c6556d5e7b1bd23032162d20b7]
+class Client--><rect fill="#FEFECE" filter="url(#fkgn5ybk8503h)" height="48" id="Client" style="stroke: #A80036; stroke-width: 1.5;" width="64" x="6" y="8"/><ellipse cx="21" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M23.4731,30.1431 Q22.8921,30.4419 22.2529,30.5913 Q21.6138,30.7407 20.9082,30.7407 Q18.4014,30.7407 17.0815,29.0889 Q15.7617,27.437 15.7617,24.3159 Q15.7617,21.1865 17.0815,19.5347 Q18.4014,17.8828 20.9082,17.8828 Q21.6138,17.8828 22.2612,18.0322 Q22.9087,18.1816 23.4731,18.4805 L23.4731,21.2031 Q22.8423,20.6221 22.2488,20.3523 Q21.6553,20.0825 21.0244,20.0825 Q19.6797,20.0825 18.9949,21.1492 Q18.3101,22.2158 18.3101,24.3159 Q18.3101,26.4077 18.9949,27.4744 Q19.6797,28.541 21.0244,28.541 Q21.6553,28.541 22.2488,28.2712 Q22.8423,28.0015 23.4731,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="35" y="28.5352">Client</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="69" y1="40" y2="40"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="69" y1="48" y2="48"/><!--MD5=[5012034014c1ff8a3f3643dc415972cf]
+class AbstractBuilder--><rect fill="#FEFECE" filter="url(#fkgn5ybk8503h)" height="99.8203" id="AbstractBuilder" style="stroke: #A80036; stroke-width: 1.5;" width="127" x="38.5" y="116"/><ellipse cx="56.65" cy="132" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M56.7633,127.5981 L55.6095,132.6699 L57.9254,132.6699 Z M55.2691,125.3569 L58.2657,125.3569 L61.6109,137.75 L59.1622,137.75 L58.3985,134.687 L55.1197,134.687 L54.3727,137.75 L51.9239,137.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="88" x="71.35" y="136.5352">AbstractBuilder</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="164.5" y1="148" y2="148"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="164.5" y1="156" y2="156"/><ellipse cx="49.5" cy="167" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="58.5" y="170.6348">Model BuildModel()</text><ellipse cx="49.5" cy="179.9551" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="58.5" y="183.5898">Model AddA()</text><ellipse cx="49.5" cy="192.9102" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="58.5" y="196.5449">Model AddB()</text><ellipse cx="49.5" cy="205.8652" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="73" x="58.5" y="209.5">Model AddC()</text><!--MD5=[a28e914f4f988ff6edfdcac171bbdb3d]
+class ConcreteBuilder--><rect fill="#FEFECE" filter="url(#fkgn5ybk8503h)" height="48" id="ConcreteBuilder" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="105.5" y="8"/><ellipse cx="120.5" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M122.9731,30.1431 Q122.3921,30.4419 121.7529,30.5913 Q121.1138,30.7407 120.4082,30.7407 Q117.9014,30.7407 116.5815,29.0889 Q115.2617,27.437 115.2617,24.3159 Q115.2617,21.1865 116.5815,19.5347 Q117.9014,17.8828 120.4082,17.8828 Q121.1138,17.8828 121.7612,18.0322 Q122.4087,18.1816 122.9731,18.4805 L122.9731,21.2031 Q122.3423,20.6221 121.7488,20.3523 Q121.1553,20.0825 120.5244,20.0825 Q119.1797,20.0825 118.4949,21.1492 Q117.8101,22.2158 117.8101,24.3159 Q117.8101,26.4077 118.4949,27.4744 Q119.1797,28.541 120.5244,28.541 Q121.1553,28.541 121.7488,28.2712 Q122.3423,28.0015 122.9731,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="91" x="134.5" y="28.5352">ConcreteBuilder</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="106.5" x2="227.5" y1="40" y2="40"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="106.5" x2="227.5" y1="48" y2="48"/><!--MD5=[fc9bbc1b4069d72d913cf31ca93281ab]
+link Client to AbstractBuilder--><path d="M49.29,56.3 C56.67,71.51 66.62,92.03 75.89,111.15 " fill="none" id="Client-&gt;AbstractBuilder" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="78.23,115.97,77.8959,106.1268,76.0455,111.4725,70.6998,109.622,78.23,115.97" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[f48f722787e9f1a0c61be857887335c5]
+link ConcreteBuilder to AbstractBuilder--><path d="M155.53,56.3 C149.75,68.03 142.42,82.92 135.05,97.89 " fill="none" id="ConcreteBuilder-&gt;AbstractBuilder" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="141.26,101.12,126.14,115.97,128.7,94.94,141.26,101.12" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[66c890be4d7ffb5840e9367259810843]
+@startuml
+
+Client ..> AbstractBuilder
+ConcreteBuilder - -|> AbstractBuilder
+
+class Client {
+}
+
+abstract class AbstractBuilder {
+    + Model BuildModel()
+    + Model AddA()
+    + Model AddB()
+    + Model AddC()
+}
+
+class ConcreteBuilder {
+}
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 18:35:57 JST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 11.0.1+13-LTS
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: ja
+Country: JP
+--></g></svg>

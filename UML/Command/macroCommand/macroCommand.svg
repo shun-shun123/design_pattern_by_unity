@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="91px" preserveAspectRatio="none" style="width:172px;height:91px;" version="1.1" viewBox="0 0 172 91" width="172px" zoomAndPan="magnify"><defs><filter height="300%" id="f1vt3mswbkn60t" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[7047e263e7ca2b3b091eacd203d137a0]
+class MacroCommand--><rect fill="#FEFECE" filter="url(#f1vt3mswbkn60t)" height="73.9102" id="MacroCommand" style="stroke: #A80036; stroke-width: 1.5;" width="154" x="7" y="7"/><ellipse cx="34.6" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M37.0731,29.1431 Q36.4921,29.4419 35.8529,29.5913 Q35.2138,29.7407 34.5082,29.7407 Q32.0014,29.7407 30.6815,28.0889 Q29.3617,26.437 29.3617,23.3159 Q29.3617,20.1865 30.6815,18.5347 Q32.0014,16.8828 34.5082,16.8828 Q35.2138,16.8828 35.8612,17.0322 Q36.5087,17.1816 37.0731,17.4805 L37.0731,20.2031 Q36.4423,19.6221 35.8488,19.3523 Q35.2553,19.0825 34.6244,19.0825 Q33.2797,19.0825 32.5949,20.1492 Q31.9101,21.2158 31.9101,23.3159 Q31.9101,25.4077 32.5949,26.4744 Q33.2797,27.541 34.6244,27.541 Q35.2553,27.541 35.8488,27.2712 Q36.4423,27.0015 37.0731,26.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="94" x="51.4" y="27.5352">MacroCommand</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="160" y1="39" y2="39"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="15" y="47"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128" x="27" y="53.6348">ICommand[] commands</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="8" x2="160" y1="59.9551" y2="59.9551"/><ellipse cx="18" cy="70.9551" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="76" x="27" y="74.5898">void Execute()</text><!--MD5=[297e559154a9f894021abe306aa25942]
+@startuml
+class MacroCommand {
+    - ICommand[] commands
+    + void Execute()
+}
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 18:35:57 JST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 11.0.1+13-LTS
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: ja
+Country: JP
+--></g></svg>

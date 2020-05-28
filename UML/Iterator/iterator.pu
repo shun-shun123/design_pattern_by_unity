@@ -1,0 +1,32 @@
+@startuml
+
+MenuItem --o LunchMenu
+MenuItem --o DinerMenu
+
+LunchMenu ..|> IIterator
+DinerMenu ..|> IIterator
+
+interface IIterator {
+    + bool HasNext()
+    + Object Next()
+}
+
+class MenuItem {
+    + string Name
+    + int Price
+    + MenuItem(string name, int price)
+}
+
+class LunchMenu {
+    - List<MenuItem> _menuItems
+    - int _position
+    + LunchMenu()
+}
+
+class DinerMenu {
+    - MenuItem[] _menuItems
+    - int _position
+    + DinerMenu()
+}
+
+@enduml

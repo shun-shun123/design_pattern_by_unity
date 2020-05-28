@@ -1,0 +1,18 @@
+@startuml
+
+Client ..> AbstractBuilder
+ConcreteBuilder --|> AbstractBuilder
+
+class Client {
+}
+
+abstract class AbstractBuilder {
+    + Model BuildModel()
+    + Model AddA()
+    + Model AddB()
+    + Model AddC()
+}
+
+class ConcreteBuilder {
+}
+@enduml

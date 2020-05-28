@@ -1,0 +1,35 @@
+@startuml
+
+SubSystems.HeadPhone .up.> Study
+SubSystems.YouTube .up.> Study
+SubSystems.Computer .up.> Study
+
+class Study {
+    - HeadPhone _headPhone
+    - YouTube _youTube
+    - Computer _computer
+    + Study(HeadPhone, YouTube, Computer)
+    + void StartProgramming()
+}
+
+class SubSystems.HeadPhone {
+    + void PowerOn()
+    + void Connect()
+}
+
+class SubSystems.YouTube {
+    + void SearchVideoList()
+    + void SelectVide()
+}
+
+class SubSystems.Computer {
+    + void PowerOn()
+    + void OpenIDE()
+}
+
+note left of Study 
+    Computer, YouTube, HeadPhoneのサブシステムをまとめ
+    StartProgrammingという新しいインタフェースを提供している
+    Facadeパターンの実装例
+end note
+@enduml

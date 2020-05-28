@@ -1,0 +1,43 @@
+@startuml
+
+LightOnCommand .up.|> ICommand
+
+LightOnCommand .right.> Light
+
+SimpleRemoteController ..> ICommand
+
+interface ICommand {
+    + void Execute()
+    + void Undo()
+}
+
+class LightOnCommand {
+    - Light light
+}
+
+class Light {
+    + void On()
+    + void Off()
+}
+
+class SimpleRemoteController {
+    - ICommand command
+    - ICommnad undoCommand
+    + void SetCommand(ICommand command)
+    + void CommandExecute()
+    + void Undo()
+}
+
+note top of Light 
+    ICommandインタフェースを実装したLightOnCommand
+    によるコマンドのReceiverとなる
+end note
+
+note left of LightOnCommand
+    ICommandを実装した具象コマンドクラスになる
+end note
+
+note left of SimpleRemoteController 
+    コマンドを最終的に実行するインボーカーになる
+end note
+@enduml

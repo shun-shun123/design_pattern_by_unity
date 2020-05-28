@@ -1,0 +1,35 @@
+@startuml
+
+Handler .up.> Context
+Context .right.> State
+
+ConcreteStateA -up-|> State
+ConcreteStateB -up-|> State
+
+class Context {
+    - State stateA
+    - State stateB
+    + void Request()
+}
+
+class State {
+    + {abstract} void Handle()
+}
+
+class ConcreteStateA {
+    + void Handle()
+}
+
+class ConcreteStateB {
+    + void Handle()
+}
+
+note left of Context 
+    複数のStateを管理して、現在の状態を表す
+    StateのHandleメソッドを呼び出すだけ
+end note
+
+note right of State 
+    一つの状態を表すインタフェースとなる
+end note
+@enduml

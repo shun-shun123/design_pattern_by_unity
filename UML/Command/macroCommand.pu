@@ -1,0 +1,6 @@
+@startuml
+class MacroCommand {
+    - ICommand[] commands
+    + void Execute()
+}
+@enduml

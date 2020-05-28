@@ -1,0 +1,24 @@
+@startuml
+
+RealSubject .up.|> ISubject
+Proxy .up.|> ISubject
+
+
+
+class RealSubject {
+    + void Request()
+}
+
+class Proxy {
+    + void Request()
+}
+
+interface ISubject {
+    + void Request()
+}
+
+note right of ISubject
+    インタフェース経由でRealSubjectへのアクセスを
+    Proxyが代理して行ってくれる
+end note
+@enduml
