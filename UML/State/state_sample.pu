@@ -1,0 +1,36 @@
+@startuml
+abstract class AbstractPlayerState {
+    # PlayerAttack PlayerAttack
+    + virtual void Attack()
+}
+
+class PlayerNormalState {
+    + PlayerNormalState(PlayerAttack playerAttack)
+    + override void Attack()
+}
+
+class PlayerEnhanceState {
+    + PlayerEnhanceState(PlayerAttack playerAttack)
+    + override void Attack()
+}
+
+class PlayerParalysisState {
+    + PlayerParalysisState(PlayerAttack playerAttack)
+    + override void Attack()
+}
+
+class PlayerAttack {
+    + AbstractPlayerState NormalState
+    + AbstractPlayerState EnhanceState
+    + AbstractPlayerState ParalysisState
+    - AbstractPlayerState _currentState
+    + void Attack()
+    + void SetState(AbstractPlayerState state)
+}
+
+PlayerNormalState -up-|> AbstractPlayerState
+PlayerEnhanceState -up-|> AbstractPlayerState
+PlayerParalysisState -up-|> AbstractPlayerState
+
+PlayerAttack -up-o AbstractPlayerState
+@enduml

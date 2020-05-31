@@ -1,5 +1,4 @@
-﻿using System;
-using Command.Interfaces;
+﻿using Command.Interfaces;
 using Command.Receiver;
 
 namespace Command

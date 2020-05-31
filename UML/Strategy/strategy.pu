@@ -1,0 +1,29 @@
+@startuml
+interface IAttack {
+    + void Attack()
+}
+
+class Player {
+    - IAttack _attack
+    + void Attack()
+    + void SetAttack(IAttack attack)
+}
+
+class Hit {
+    + void Attack()
+}
+
+class Slash {
+    + void Attack()
+}
+
+class Magic {
+    + void Attack()
+}
+
+Hit .up.|> IAttack
+Slash .up.|> IAttack
+Magic .up.|> IAttack
+
+Player .down.> IAttack
+@enduml

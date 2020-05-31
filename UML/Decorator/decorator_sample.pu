@@ -1,0 +1,28 @@
+@startuml
+interface IPlayerAction {
+    + void Attack()
+}
+
+class PlayerAction {
+    + void Attack()
+}
+
+abstract class PlayerActionAttr {
+    # IPlayerAction PlayerAction
+    + {abstract} void Attack()
+}
+
+class Poison {
+    + void Attack()
+}
+
+class Water {
+    + void Attack()
+}
+
+PlayerAction .up.|> IPlayerAction
+PlayerActionAttr .up.|> IPlayerAction
+Poison -up-|> PlayerActionAttr
+Water -up-|> PlayerActionAttr
+
+@enduml

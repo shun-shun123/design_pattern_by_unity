@@ -1,0 +1,25 @@
+@startuml
+class SubSystems.PlayerAttack {
+    + void Attack()
+}
+
+class SubSystems.AttackEffect {
+    + void ShowAttackEffect()
+}
+
+class SubSystems.AttackMotion {
+    + void PlayAttackMotion()
+}
+
+class PlayerAttackManager {
+    - PlayerAttack _playerAttack
+    - AttackEffect _attackEffect
+    - AttackMotion _attackMotion
+    + void Attack()
+}
+
+SubSystems.PlayerAttack .up.> PlayerAttackManager
+SubSystems.AttackEffect .up.> PlayerAttackManager
+SubSystems.AttackMotion .up.> PlayerAttackManager
+
+@enduml
